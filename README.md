@@ -25,7 +25,9 @@ The system provides:
 
 Install required dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Alternatively, a conda environment is recommended:
 
@@ -47,7 +49,9 @@ All operations are executed through simple terminal commands.
 
 ## Batch Processing
 
+```bash
 python PUF-Image-Processor.py batch input_images/ output_images/
+```
 
 This step processes all input images and generates binarized PUF representations for subsequent statistical analysis.
 
@@ -55,7 +59,9 @@ This step processes all input images and generates binarized PUF representations
 
 ## Hamming Distance Analysis
 
+```bash
 python PUF-Image-Processor.py batchhamming output_images/ --output results.xlsx
+```
 
 This function computes pairwise Hamming distances between processed PUF samples and exports a full distance matrix in Excel format for statistical evaluation.
 
@@ -63,7 +69,9 @@ This function computes pairwise Hamming distances between processed PUF samples 
 
 ## Bit Uniformity Analysis
 
+```bash
 python PUF-Image-Processor.py bituniformity output_images/ --output uniformity.xlsx
+```
 
 This module calculates bit uniformity across the dataset, providing a quantitative measure of randomness quality in the PUF representation.
 
